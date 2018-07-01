@@ -1,7 +1,93 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    background-color: #F5F5DC;
+}
+h1 {
+    background-color: #ddccff;
+    text-align: center;
+    font-family: "Bradley Hand ITC", Times, serif;
+}
+h2 {
+	text-align: center;
+    color: purple;
+    font-family: "Bradley Hand ITC", Times, serif;
+}
+h4 {
+	color: purple;
+    font-family: "Bradley Hand ITC", Times, serif;
+}
+p {
+	font-family: "Bradley Hand ITC", Times, serif;
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+
+
+
+
+<h1> Frankie's 21<sup>st</sup> Birthday</h1>
+
+<div class="row">
+  <div class="column">
+    <h2>MENU</h2>
+<p><i> Please input your choices and press submit. </i></p>
+    <form action="/action_page.php">
+<h4>Name</h4><br>
+<input type="text" name="fullname"><br>
+
+<h4>Starter</h4><br>
+<input type="radio" name="Starter" value="1"> Local woodland mushroom fricassEE, granary toast, truffle oil, baby leaves<br>
+<input type="radio" name="Starter" value="2"> Prawn and smoked salmon timbale, endive salad<br>
+<input type="radio" name="Starter" value="3"> Torched goats cheese, buttered local asparagus, honey walnuts<br>
+<input type="radio" name="Starter" value="4"> Parisienne of melon, Pimm’s jelly, orange sorbet<br>
+</form>
+
+<form action="/action_page.php">
+<h4>Main Course</h4><br>
+<input type="radio" name="Starter" value="1"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
+<input type="radio" name="Starter" value="2"> Pan fried fillet of Peterhead salmon, curried spinach, parmentier  potataoes<br>
+<input type="radio" name="Starter" value="3"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
+<input type="radio" name="Starter" value="4"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled haloumi<br>
+</form>
+
+<form action="/action_page.php">
+<h4>Dessert</h4><br>
+<input type="radio" name="Starter" value="StickyToffeePudding"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
+<input type="radio" name="Starter" value="cremeBrulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
+<input type="radio" name="Starter" value="brownies"> Trio of chocolate... warm brownie, white chocolate panna cotta, double chocolate ice cream<br>
+<input type="radio" name="Starter" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
+<br> <br>
+<input type="submit" value="Submit">
+</form>
+  </div>
+  <div class="column">
+    <img src="https://www.dottyaboutpaper.co.uk/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/c/h/champagne-fun-21st-birthday-main.jpg" alt="Invite Image" width="500" height="600">
+  </div>
+</div>
+
 </body>
 </html>
