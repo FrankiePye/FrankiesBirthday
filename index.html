@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +57,34 @@ p {
   <div class="column">
     <h2>MENU</h2>
 <p><i> Please input your choices and press submit. </i></p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7W-YQ-V21Dl-5rdLkH39iQO9zId0tZuy4kxXI-yLsTz0VbQ/viewform?embedded=true" width="500" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <form name="contactform" method="post" action="send_form_email.php">
+<h4>Name</h4><br>
+<input type="text" name="fullname"><br>
+
+<h4>Starter</h4><br>
+<input type="radio" name="Starter" value="1"> Local woodland mushroom fricassEE, granary toast, truffle oil, baby leaves<br>
+<input type="radio" name="Starter" value="2"> Prawn and smoked salmon timbale, endive salad<br>
+<input type="radio" name="Starter" value="3"> Torched goats cheese, buttered local asparagus, honey walnuts<br>
+<input type="radio" name="Starter" value="4"> Parisienne of melon, Pimm’s jelly, orange sorbet<br>
+</form>
+
+<form action="mailto:francescapye@gmail.com">
+<h4>Main Course</h4><br>
+<input type="radio" name="Starter" value="1"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
+<input type="radio" name="Starter" value="2"> Pan fried fillet of Peterhead salmon, curried spinach, parmentier  potataoes<br>
+<input type="radio" name="Starter" value="3"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
+<input type="radio" name="Starter" value="4"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled haloumi<br>
+</form>
+
+<form action="/action_page.php">
+<h4>Dessert</h4><br>
+<input type="radio" name="Starter" value="StickyToffeePudding"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
+<input type="radio" name="Starter" value="cremeBrulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
+<input type="radio" name="Starter" value="brownies"> Trio of chocolate... warm brownie, white chocolate panna cotta, double chocolate ice cream<br>
+<input type="radio" name="Starter" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
+<br> <br>
+<input type="submit" value="Submit">
+</form>
   </div>
   <div class="column">
     <img src="https://www.dottyaboutpaper.co.uk/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/c/h/champagne-fun-21st-birthday-main.jpg" alt="Invite Image" width="500" height="600">
