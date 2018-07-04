@@ -22,6 +22,17 @@
     content: "";
     display: table;
     clear: both;
+    
+    fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
 }
 body {
     background-color: #F5F5DC;
@@ -67,31 +78,35 @@ p {
 
   <!-- all your input fields here.... -->
   <h4>Name</h4><br>
-<input type="text" name="fullname"><br>
+<input type="text" name="fullname" placeholder="Name" required><br><br>
 
-<h4>Starter</h4><br>
-<input type="radio" name="Starter" value="1"> Local woodland mushroom fricassEE, granary toast, truffle oil, baby leaves<br>
+<fieldset>
+<ledgend> <h4>Starter</h4> </ledgend>
+<input type="radio" name="Starter" value="1"> Local woodland mushroom fricasse, granary toast, truffle oil, baby leaves<br>
 <input type="radio" name="Starter" value="2"> Prawn and smoked salmon timbale, endive salad<br>
 <input type="radio" name="Starter" value="3"> Torched goats cheese, buttered local asparagus, honey walnuts<br>
 <input type="radio" name="Starter" value="4"> Parisienne of melon, Pimm’s jelly, orange sorbet<br>
+</fieldset>
 
 
+<fieldset>
+<ledgend> <h4>Main Course</h4> </ledgend>
+<input type="radio" name="Main" value="1"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
+<input type="radio" name="Main" value="2"> Pan fried fillet of Peterhead salmon, curried spinach, parmentier  potataoes<br>
+<input type="radio" name="Main" value="3"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
+<input type="radio" name="Main" value="4"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled haloumi<br>
+</fieldset>
 
-<h4>Main Course</h4><br>
-<input type="radio" name="Starter" value="1"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
-<input type="radio" name="Starter" value="2"> Pan fried fillet of Peterhead salmon, curried spinach, parmentier  potataoes<br>
-<input type="radio" name="Starter" value="3"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
-<input type="radio" name="Starter" value="4"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled haloumi<br>
-
-
-<h4>Dessert</h4><br>
-<input type="radio" name="Starter" value="StickyToffeePudding"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
-<input type="radio" name="Starter" value="cremeBrulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
-<input type="radio" name="Starter" value="brownies"> Trio of chocolate... warm brownie, white chocolate panna cotta, double chocolate ice cream<br>
-<input type="radio" name="Starter" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
+<fieldset>
+<ledgend> <h4>Dessert</h4> </ledgend>
+<input type="radio" name="Dessert" value="StickyToffeePudding"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
+<input type="radio" name="Dessert" value="cremeBrulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
+<input type="radio" name="Dessert" value="brownies"> Trio of chocolate... warm brownie, white chocolate panna cotta, double chocolate ice cream<br>
+<input type="radio" name="Dessert" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
+</fieldset>
 <br> <br>
 
-  <input type='submit' value='Test form' />
+  <input type='submit' value='Submit'>
 </form>
       
 
