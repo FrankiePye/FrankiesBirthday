@@ -57,8 +57,16 @@ p {
   <div class="column">
     <h2>MENU</h2>
 <p><i> Please input your choices and press submit. </i></p>
-    <form name="contactform" method="post" action="send_form_email.php">
-<h4>Name</h4><br>
+
+
+
+<form action="https://getsimpleform.com/messages?form_api_token=b8a96106151c6f6ee83031dd3d5021ff" method="post">
+
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='https://frankiepye.github.io/FrankiesBirthdaySubmit' />
+
+  <!-- all your input fields here.... -->
+  <h4>Name</h4><br>
 <input type="text" name="fullname"><br>
 
 <h4>Starter</h4><br>
@@ -82,8 +90,14 @@ p {
 <input type="radio" name="Starter" value="brownies"> Trio of chocolate... warm brownie, white chocolate panna cotta, double chocolate ice cream<br>
 <input type="radio" name="Starter" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
 <br> <br>
-<input type="submit" value="Submit">
-<form action="mailto:francescapye@gmail.com">
+
+  <input type='submit' value='Test form' />
+</form>
+      
+
+
+
+
   </div>
   <div class="column">
     <img src="https://www.dottyaboutpaper.co.uk/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/c/h/champagne-fun-21st-birthday-main.jpg" alt="Invite Image" width="500" height="600">
