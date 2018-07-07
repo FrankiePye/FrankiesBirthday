@@ -70,7 +70,7 @@ background: #e8a2c4; /** color of the moving part of the scrollbar (thumb) **/
 border: 1px solid #000; /** border around moving part of scrollbar (overlaps with border of total scrollbar) **/
 }
   fieldset {
-  	border:#e8a2c4 2px groove;
+	  border:#e8a2c4 2px groove;
 }
 </style>
 </head>
@@ -98,10 +98,10 @@ border: 1px solid #000; /** border around moving part of scrollbar (overlaps wit
 <fieldset>
 <ledgend><h4>Starter</h4></ledgend>
 <p>
-<input type="radio" name="Starter" value="1"> Local woodland mushroom fricassee, granary toast, truffle oil, baby leaves<br>
-<input type="radio" name="Starter" value="2"> Prawn and smoked salmon timbale, endive salad<br>
-<input type="radio" name="Starter" value="3"> Torched goats cheese, buttered local asparagus, honey walnuts<br>
-<input type="radio" name="Starter" value="4"> Parisienne of melon, Pimm’s jelly, orange sorbet<br>
+<input type="radio" name="Starter" value="S-mushroom"> Local woodland mushroom fricassee, granary toast, truffle oil, baby leaves<br>
+<input type="radio" name="Starter" value="S-fish"> Prawn and smoked salmon timbale, endive salad<br>
+<input type="radio" name="Starter" value="S-cheese"> Torched goats cheese, buttered local asparagus, honey walnuts<br>
+<input type="radio" name="Starter" value="S-melon"> Parisienne of melon, Pimm’s jelly, orange sorbet<br>
 </p>
 </fieldset>
 <br> <br>
@@ -110,10 +110,10 @@ border: 1px solid #000; /** border around moving part of scrollbar (overlaps wit
 <fieldset>
 <ledgend> <h4>Main Course</h4> </ledgend>
 <p>
-<input type="radio" name="Main" value="1"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
-<input type="radio" name="Main" value="2"> Pan-fried fillet of Peterhead salmon, curried spinach, Parmentier  potatoes<br>
-<input type="radio" name="Main" value="3"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
-<input type="radio" name="Main" value="4"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled halloumi<br>
+<input type="radio" name="Main" value="M-chicken"> Hunter’s chicken, melted cheddar, Jack Daniels BBQ sauce, pancetta<br>
+<input type="radio" name="Main" value="M-salmon"> Pan-fried fillet of Peterhead salmon, curried spinach, Parmentier  potatoes<br>
+<input type="radio" name="Main" value="M-salad"> Chicken Caesar salad, native anchovies, parmesan, crisp bacon<br>
+<input type="radio" name="Main" value="M-gnocchi"> Spinach & ricotta gnocchi, buttered greens, herb velouté, grilled halloumi<br>
 </p>
 </fieldset>
 <br> <br>
@@ -121,10 +121,10 @@ border: 1px solid #000; /** border around moving part of scrollbar (overlaps wit
 <fieldset>
 <ledgend> <h4>Dessert</h4> </ledgend>
 <p>
-<input type="radio" name="Dessert" value="StickyToffeePudding"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
-<input type="radio" name="Dessert" value="cremeBrulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
-<input type="radio" name="Dessert" value="brownies"> Trio of chocolate... warm brownie, white chocolate pannacotta, double chocolate ice cream<br>
-<input type="radio" name="Dessert" value="cheese"> Selection of fine cheeses, chutney grapes & celery<br>
+<input type="radio" name="Dessert" value="P-toffee"> Sticky toffee pudding, caramel ice cream, toffee sauce<br>
+<input type="radio" name="Dessert" value="P-brulee"> Creme brùlée, Manton strawberry compote, mango sorbet<br>
+<input type="radio" name="Dessert" value="P-brownies"> Trio of chocolate... warm brownie, white chocolate pannacotta, double chocolate ice cream<br>
+<input type="radio" name="Dessert" value="P-cheeses"> Selection of fine cheeses, chutney grapes & celery<br>
 </p>
 </fieldset>
 <br> <br>
@@ -137,13 +137,12 @@ border: 1px solid #000; /** border around moving part of scrollbar (overlaps wit
 <ledgend><h2>Children's Menu</h2></ledgend>
 <h4>Main</h4>
 <p>
-<input type="radio" name="Dessert" value="StickyToffeePudding"> Penne pasta, fresh tomato sauce, parmesan<br>
-<input type="radio" name="Dessert" value="cremeBrulee"> Chicken goujons, homemade chips, salad<br>
-<input type="radio" name="Dessert" value="brownies"> Free range chicken breast, mashed potato, gravy<br>
-<input type="radio" name="Dessert" value="cheese"> Wholetail scampi, homemade chips, salad<br>
-<input type="radio" name="Dessert" value="cheese"> Wholetail scampi, homemade chips, salad<br>
-<input type="radio" name="Dessert" value="cheese"> Homemade burger, homemade chips & salad<br>
-<input type="radio" name="Dessert" value="cheese"> 3 cheese pizza, homemade chips & salad<br> <br>
+<input type="radio" name="Dessert" value="C-pasta"> Penne pasta, fresh tomato sauce, parmesan<br>
+<input type="radio" name="Dessert" value="C-goujons"> Chicken goujons, homemade chips, salad<br>
+<input type="radio" name="Dessert" value="C-chick"> Free range chicken breast, mashed potato, gravy<br>
+<input type="radio" name="Dessert" value="C-scampi"> Wholetail scampi, homemade chips, salad<br>
+<input type="radio" name="Dessert" value="C-burger"> Homemade burger, homemade chips & salad<br>
+<input type="radio" name="Dessert" value="C-pizza"> 3 cheese pizza, homemade chips & salad<br> <br>
 </p>
 <h4>Desserts</h4>
 <p>
@@ -152,7 +151,7 @@ Ice cream sundaes available for dessert.
 </fieldset>
 </div>
 </div>
-  <input type='submit' value='Submit'>
+  <input type='submit' value='Submit' style="height=20px; width=50px">
 </form>
 </body>
 </html>
